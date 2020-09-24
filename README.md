@@ -1,4 +1,6 @@
 # photo-album-python
+![Python application](https://github.com/rjnay1984/photo-album-python/workflows/Python%20application/badge.svg)
+
 Photo album CLI app for the technical showcase. Includes unit test and CI with Github actions.
 
 ## Get Started
