@@ -1,3 +1,4 @@
 fire
 requests
 flake8
+pytest
