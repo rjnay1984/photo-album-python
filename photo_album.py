@@ -14,6 +14,9 @@ def request_album(id):
     for photo in resp.json():
         photos.append(f"[{photo['id']}] {photo['title']}")
 
+    if len(photos) < 1:
+        return 'There are no photos in this album.'
+
     return photos
 
 

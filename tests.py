@@ -6,7 +6,11 @@ consistent in the placeholder API.
 """
 
 
-def test_photo_album():
+def test_photo_album_success():
     album_request = request_album(4)
-    print(album_request)
     assert len(album_request) == 50
+
+
+def test_photo_album_unsuccessful():
+    album_request = request_album(101)
+    assert 'There are no photos in this album.' in str(album_request)
